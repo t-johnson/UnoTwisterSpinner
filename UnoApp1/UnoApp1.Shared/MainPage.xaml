@@ -1,0 +1,34 @@
+﻿<Page
+    x:Class="UnoApp1.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UnoApp1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" RowSpacing="8">
+        <Grid.RowDefinitions  >
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="30"/>
+            <ColumnDefinition Width="*"/> 
+            <ColumnDefinition Width="*"/> 
+            <ColumnDefinition Width="30"/> 
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="0" Name="title" Text="Twister spinner"  FontSize="30" Margin="40,40,40,00" TextWrapping="WrapWholeWords"/>
+        <TextBlock Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="1" Name ="timerLabel" Text="Click the button, or slide for timer." Margin="40,0,40,0"/>
+        <Slider Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="1" Name="AutoTimer"  ValueChanged="AutoTimer_ValueChanged" Margin="40,30,40,0" Minimum="0" Maximum="30"/>
+        <RadioButton Grid.Column="1" Content="Voice 1" Grid.Row="2" Name="Voice1" GroupName="Voice" Click="voice1_onclick" IsChecked="True"></RadioButton>
+        <RadioButton Grid.Column="2" Content="Voice 2" Grid.Row="2" Name="Voice2" GroupName="Voice" Click="voice2_onclick"></RadioButton>
+        <Button Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="3" Name="SpinButton" Content="Spin" FontSize="30"  Click="SpinButton_OnClick" VerticalAlignment="Center" HorizontalAlignment="Center" MinHeight="200" MinWidth="300" Height="auto" Width="auto"/>
+        <TextBlock Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="4" Name="copyRight" Text="Copyright me" Margin="0,0,0,20" FontSize="30" />
+        <MediaPlayerElement Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="4" Name="player1" AutoPlay="True" AllowFocusOnInteraction="False"  />
+
+    </Grid>
+</Page>
