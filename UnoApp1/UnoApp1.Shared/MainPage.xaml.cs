@@ -77,7 +77,7 @@ namespace UnoApp1
       {
          //player1.Source = MediaSource.CreateFromUri(new Uri("https://file-examples.com/wp-content/uploads/2017/11/file_example_MP3_700KB.mp3"));
 
-         player1.Source = MediaSource.CreateFromUri(new Uri(string.Format("ms-appx:///Assets/{0}/{1}.mp3", currentVoice, partColor)));
+         player1.Source = MediaSource.CreateFromUri(new Uri(string.Format("ms-appx:///Assets/{0}-{1}.mp3", currentVoice, partColor)));
       }
 
 

@@ -48,10 +48,14 @@
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
     <MtouchArch>ARM64</MtouchArch>
-    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
-    <CodesignKey>iPhone Developer</CodesignKey>
+    <CodesignEntitlements>
+    </CodesignEntitlements>
+    <CodesignKey>iPhone Distribution: Aptos Inc. (T5SX78S3D2)</CodesignKey>
     <MtouchDebug>true</MtouchDebug>
     <MtouchExtraArgs>--setenv=MONO_LOG_LEVEL=debug --setenv=MONO_LOG_MASK=gc --setenv=MONO_GC_PARAMS=soft-heap-limit=512m,nursery-size=64m,evacuation-threshold=66,major=marksweep,concurrent-sweep</MtouchExtraArgs>
+    <CodesignProvision />
+    <CodesignExtraArgs />
+    <CodesignResourceRules />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
     <DebugType>none</DebugType>
@@ -98,38 +102,38 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Main.cs" />
-    <BundleResource Include="Resources\Microsoft David Desktop\Left Foot Blue.mp3" />
-    <BundleResource Include="Resources\Microsoft David Desktop\Left Foot Green.mp3" />
-    <BundleResource Include="Resources\Microsoft David Desktop\Left Foot Red.mp3" />
-    <BundleResource Include="Resources\Microsoft David Desktop\Left Foot Yellow.mp3" />
-    <BundleResource Include="Resources\Microsoft David Desktop\Left Hand Blue.mp3" />
-    <BundleResource Include="Resources\Microsoft David Desktop\Left Hand Green.mp3" />
-    <BundleResource Include="Resources\Microsoft David Desktop\Left Hand Red.mp3" />
-    <BundleResource Include="Resources\Microsoft David Desktop\Left Hand Yellow.mp3" />
-    <BundleResource Include="Resources\Microsoft David Desktop\Right Foot Blue.mp3" />
-    <BundleResource Include="Resources\Microsoft David Desktop\Right Foot Green.mp3" />
-    <BundleResource Include="Resources\Microsoft David Desktop\Right Foot Red.mp3" />
-    <BundleResource Include="Resources\Microsoft David Desktop\Right Foot Yellow.mp3" />
-    <BundleResource Include="Resources\Microsoft David Desktop\Right Hand Blue.mp3" />
-    <BundleResource Include="Resources\Microsoft David Desktop\Right Hand Green.mp3" />
-    <BundleResource Include="Resources\Microsoft David Desktop\Right Hand Red.mp3" />
-    <BundleResource Include="Resources\Microsoft David Desktop\Right Hand Yellow.mp3" />
-    <BundleResource Include="Resources\Microsoft Zira Desktop\Left Foot Blue.mp3" />
-    <BundleResource Include="Resources\Microsoft Zira Desktop\Left Foot Green.mp3" />
-    <BundleResource Include="Resources\Microsoft Zira Desktop\Left Foot Red.mp3" />
-    <BundleResource Include="Resources\Microsoft Zira Desktop\Left Foot Yellow.mp3" />
-    <BundleResource Include="Resources\Microsoft Zira Desktop\Left Hand Blue.mp3" />
-    <BundleResource Include="Resources\Microsoft Zira Desktop\Left Hand Green.mp3" />
-    <BundleResource Include="Resources\Microsoft Zira Desktop\Left Hand Red.mp3" />
-    <BundleResource Include="Resources\Microsoft Zira Desktop\Left Hand Yellow.mp3" />
-    <BundleResource Include="Resources\Microsoft Zira Desktop\Right Foot Blue.mp3" />
-    <BundleResource Include="Resources\Microsoft Zira Desktop\Right Foot Green.mp3" />
-    <BundleResource Include="Resources\Microsoft Zira Desktop\Right Foot Red.mp3" />
-    <BundleResource Include="Resources\Microsoft Zira Desktop\Right Foot Yellow.mp3" />
-    <BundleResource Include="Resources\Microsoft Zira Desktop\Right Hand Blue.mp3" />
-    <BundleResource Include="Resources\Microsoft Zira Desktop\Right Hand Green.mp3" />
-    <BundleResource Include="Resources\Microsoft Zira Desktop\Right Hand Red.mp3" />
-    <BundleResource Include="Resources\Microsoft Zira Desktop\Right Hand Yellow.mp3" />
+    <BundleResource Include="Resources\Assets\Microsoft David Desktop-Left Foot Blue.mp3" />
+    <BundleResource Include="Resources\Assets\Microsoft David Desktop-Left Foot Green.mp3" />
+    <BundleResource Include="Resources\Assets\Microsoft David Desktop-Left Foot Red.mp3" />
+    <BundleResource Include="Resources\Assets\Microsoft David Desktop-Left Foot Yellow.mp3" />
+    <BundleResource Include="Resources\Assets\Microsoft David Desktop-Left Hand Blue.mp3" />
+    <BundleResource Include="Resources\Assets\Microsoft David Desktop-Left Hand Green.mp3" />
+    <BundleResource Include="Resources\Assets\Microsoft David Desktop-Left Hand Red.mp3" />
+    <BundleResource Include="Resources\Assets\Microsoft David Desktop-Left Hand Yellow.mp3" />
+    <BundleResource Include="Resources\Assets\Microsoft David Desktop-Right Foot Blue.mp3" />
+    <BundleResource Include="Resources\Assets\Microsoft David Desktop-Right Foot Green.mp3" />
+    <BundleResource Include="Resources\Assets\Microsoft David Desktop-Right Foot Red.mp3" />
+    <BundleResource Include="Resources\Assets\Microsoft David Desktop-Right Foot Yellow.mp3" />
+    <BundleResource Include="Resources\Assets\Microsoft David Desktop-Right Hand Blue.mp3" />
+    <BundleResource Include="Resources\Assets\Microsoft David Desktop-Right Hand Green.mp3" />
+    <BundleResource Include="Resources\Assets\Microsoft David Desktop-Right Hand Red.mp3" />
+    <BundleResource Include="Resources\Assets\Microsoft David Desktop-Right Hand Yellow.mp3" />
+    <BundleResource Include="Resources\Assets\Microsoft Zira Desktop-Left Foot Blue.mp3" />
+    <BundleResource Include="Resources\Assets\Microsoft Zira Desktop-Left Foot Green.mp3" />
+    <BundleResource Include="Resources\Assets\Microsoft Zira Desktop-Left Foot Red.mp3" />
+    <BundleResource Include="Resources\Assets\Microsoft Zira Desktop-Left Foot Yellow.mp3" />
+    <BundleResource Include="Resources\Assets\Microsoft Zira Desktop-Left Hand Blue.mp3" />
+    <BundleResource Include="Resources\Assets\Microsoft Zira Desktop-Left Hand Green.mp3" />
+    <BundleResource Include="Resources\Assets\Microsoft Zira Desktop-Left Hand Red.mp3" />
+    <BundleResource Include="Resources\Assets\Microsoft Zira Desktop-Left Hand Yellow.mp3" />
+    <BundleResource Include="Resources\Assets\Microsoft Zira Desktop-Right Foot Blue.mp3" />
+    <BundleResource Include="Resources\Assets\Microsoft Zira Desktop-Right Foot Green.mp3" />
+    <BundleResource Include="Resources\Assets\Microsoft Zira Desktop-Right Foot Red.mp3" />
+    <BundleResource Include="Resources\Assets\Microsoft Zira Desktop-Right Foot Yellow.mp3" />
+    <BundleResource Include="Resources\Assets\Microsoft Zira Desktop-Right Hand Blue.mp3" />
+    <BundleResource Include="Resources\Assets\Microsoft Zira Desktop-Right Hand Green.mp3" />
+    <BundleResource Include="Resources\Assets\Microsoft Zira Desktop-Right Hand Red.mp3" />
+    <BundleResource Include="Resources\Assets\Microsoft Zira Desktop-Right Hand Yellow.mp3" />
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Content Include="Entitlements.plist" />
@@ -147,7 +151,7 @@
     <BundleResource Include="Resources\Fonts\winjs-symbols.ttf" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Uno.UI" Version="1.45.0" />
+    <PackageReference Include="Uno.UI" Version="2.0.532" />
     <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="1.1.1" />
     <PackageReference Include="Microsoft.Extensions.Logging.Filter" Version="1.1.1" />
   </ItemGroup>
